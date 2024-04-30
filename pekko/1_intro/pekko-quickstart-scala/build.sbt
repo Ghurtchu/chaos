@@ -4,7 +4,7 @@ version := "1.0"
 
 scalaVersion := "2.13.13"
 
-lazy val pekkoVersion = "pekko-intro"
+lazy val pekkoVersion = "1.0.2"
 
 // Run in a separate JVM, to make sure sbt waits until all threads have
 // finished before returning.
