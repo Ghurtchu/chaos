@@ -6,5 +6,6 @@ A reliable distributed system should be designed to withstand failures at variou
 
   *Reliability*:
 an ability of the system to consistently deliver correct and consistent results, even in the presence of various types of failures, such as hardware failures, network outages, or software errors.
+  
   *Scalable*:
 a scalable distributed system should be able to efficiently accommodate growth in terms of data volume, user requests, or any other workload metric, while maintaining acceptable levels of performance, reliability, and response time. This typically involves designing the system architecture in a way that allows for easy horizontal or vertical scaling, depending on the specific requirements and constraints of the system.
