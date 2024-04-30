@@ -1,0 +1,15 @@
+# IntelliJ IDEA
+.idea/
+
+# OS-specific files
+*.iml
+*.ipr
+*.iws
+
+# Compiled files
+out/
+target/
+
+# Miscellaneous
+*.class
+*.log
