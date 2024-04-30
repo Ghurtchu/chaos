@@ -16,11 +16,11 @@ List of most common Pekko libraries and their goals:
 -----
   
   *`Actor library`*
-
+-----
 The core Pekko library, `pekko-actor-typed`, introduces actors as a fundamental programming paradigm for building high-performance, concurrent, and distributed systems. Unlike traditional OOP, where encapsulation is limited to state, actors encapsulate both state and execution. Communication with actors occurs through message passing rather than method calls, enabling efficient concurrency and remote communication. Actors address challenges such as building high-performance applications, handling errors in multi-threaded environments, and mitigating concurrency pitfalls. This approach offers a consistent, integrated model across Pekko libraries, simplifying concurrent and distributed system design.
 
   *`Remoting`*
-
+-----
 Remoting in Pekko facilitates seamless message exchange between actors residing on different computers. It operates as a module rather than a traditional library, primarily configured rather than interacted with through APIs. Leveraging the actor model, it ensures uniformity between local and remote message sends. Remoting addresses challenges such as addressing remote actor systems and individual actors, serialization of messages, managing network connections, detecting failures, and multiplexing communications transparently. While direct usage of Remoting is infrequent, it serves as the foundation for the Cluster subsystem within Pekko.
 
   *`Cluster`*
