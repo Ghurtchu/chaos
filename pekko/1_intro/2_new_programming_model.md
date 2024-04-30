@@ -1,0 +1,7 @@
+
+It is necessary to have a new programming model in modern systems, highlighting the limitations of traditional object-oriented programming (OOP) in addressing the complexities of multi-threaded, multi-CPU architectures. There is a mismatch between traditional programming assumptions and the realities of modern computing environments, focusing on three key areas:
+- The challenge of encapsulation: While OOP emphasizes encapsulation to protect data integrity, multi-threaded execution can lead to corrupted internal state. Locks, commonly used to address this, hinder concurrency, performance, and can result in deadlocks.
+- The illusion of shared memory: Modern architectures don't have true shared memory; CPUs communicate by passing data explicitly. Marking variables as volatile or using atomic structures can mitigate this, but often leads to complexity and performance bottlenecks.
+- The illusion of a call stack: Call stacks, designed for single-threaded execution, struggle with asynchronous call chains in multi-threaded systems. Delegating tasks across threads can result in lost or unhandled exceptions, challenging fault recovery and error handling.
+
+In conclusion, we advocate for the actor model as a solution to these challenges. By explicitly passing messages between concurrent entities, the actor model avoids issues with encapsulation, shared memory, and call stack limitations. It promotes fault-tolerant and responsive systems by embracing message-based communication and explicit error signaling mechanisms.
