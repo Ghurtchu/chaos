@@ -20,4 +20,8 @@ refers to the time it takes for a message, request, or data packet to travel fro
 
   *Cluster Partition*:
 -----
-a cluster partition occurs when a distributed system splits into separate segments or partitions due to network failures, communication issues, or other factors. Essentially, it means that the nodes in the cluster are no longer able to communicate with each other effectively, leading to separate groups of nodes operating independently. This can result in isolated islands of nodes, where each island forms its own subset of the original cluster. Cluster partitions can pose challenges for data consistency and system availability in distributed systems.  
+a cluster partition occurs when a distributed system splits into separate segments or partitions due to network failures, communication issues, or other factors. Essentially, it means that the nodes in the cluster are no longer able to communicate with each other effectively, leading to separate groups of nodes operating independently. This can result in isolated islands of nodes, where each island forms its own subset of the original cluster. Cluster partitions can pose challenges for data consistency and system availability in distributed systems.
+
+  *Green Blue Deployment*:
+-----
+green-blue deployment is a technique used in software development and deployment where you have two identical production environments: one "green" (active) and one "blue" (inactive). When you need to deploy updates or changes, you do so to the inactive environment (blue). Once the changes are deployed and tested, traffic is switched from the green environment to the blue one, making it active and the green one inactive. This allows for seamless updates with minimal downtime.  
