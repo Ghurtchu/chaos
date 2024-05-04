@@ -25,3 +25,15 @@ a cluster partition occurs when a distributed system splits into separate segmen
   *Green Blue Deployment*:
 -----
 green-blue deployment is a technique used in software development and deployment where you have two identical production environments: one "green" (active) and one "blue" (inactive). When you need to deploy updates or changes, you do so to the inactive environment (blue). Once the changes are deployed and tested, traffic is switched from the green environment to the blue one, making it active and the green one inactive. This allows for seamless updates with minimal downtime.  
+
+  *At most once delivery*:
+-----
+each message is delivered zero or one time; in more causal terms it means that messages can be lost, but are never duplicated.
+
+  *At least once delivery*:
+-----
+potentially multiple attempts are made to deliver each message, until at least one succeeds; again, in more causal terms this means that messages can be duplicated but are never lost.
+
+  *At least once delivery*:
+-----
+each message is delivered exactly once to the recipient; the message can neither be lost nor be duplicated.
