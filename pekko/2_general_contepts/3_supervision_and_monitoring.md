@@ -9,9 +9,10 @@ Supervision can do 3 things:
 - restart the actor, clear the state
 - stop the actor permanently
 
-Each ActorSystem starts at least two top level actors:
-- `user`: parent of all the actors you create 
-- `system`: parent of all the actors for pekko internals
+Each ActorSystem starts at least three top level actors:
+- `/`: root guardian, parent of `user` and `system` actors
+- `/user`: child of root and parent of all the actors you create 
+- `/system`: child of root and parent of all the actors for pekko internals
 
 Actors can monitor other actors for such failures. 
 Not only parent actors can watch children. 
