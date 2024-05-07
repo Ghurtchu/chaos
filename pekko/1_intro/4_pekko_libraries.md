@@ -1,5 +1,5 @@
 List of most common Pekko libraries and their goals:
-- `Actor library`: 
+- `Actor library` 
 - `Remoting`
 - `Cluster`
 - `Cluster Sharding`
