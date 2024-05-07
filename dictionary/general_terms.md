@@ -34,6 +34,6 @@ each message is delivered zero or one time; in more causal terms it means that m
 -----
 potentially multiple attempts are made to deliver each message, until at least one succeeds; again, in more causal terms this means that messages can be duplicated but are never lost.
 
-  *At least once delivery*:
+  *Exactly once delivery*:
 -----
 each message is delivered exactly once to the recipient; the message can neither be lost nor be duplicated.
